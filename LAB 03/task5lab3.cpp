@@ -95,6 +95,11 @@ public:
 };
 
 int main() {
+
+    
+    cout << "NAME: MAHNOOR HUSSAIN" << endl;
+    cout << "ROLL NO.: 23K-0535" << endl << endl;
+    
     Stationary shop;
     int choice;
 
