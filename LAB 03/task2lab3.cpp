@@ -10,19 +10,19 @@ class WaterBottle {
 
 public:
   
-    string getCompany() { 
+    string getCompany() const{ 
         return company;
     }
 
-    string getColor() {
+    string getColor() const {
         return color;
     }
 
-    float getCapacityLitres() {
+    float getCapacityLitres() const {
         return capacityLitres;
     }
 
-    float getCapacityMillilitres() { 
+    float getCapacityMillilitres() const{ 
         return capacityMillilitres; 
     }
 
