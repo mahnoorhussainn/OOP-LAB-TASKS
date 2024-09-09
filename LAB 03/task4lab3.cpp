@@ -13,67 +13,67 @@ class Smartphone{
 
 public:
    
-    string getBrand(){
+    string getBrand() const{
          return Brand; 
     }
 
-    string getModel(){ 
+    string getModel() const{ 
         return Model;
     }
 
-    string getDisplay(){ 
+    string getDisplay() const{ 
         return DisplayResolution;
     } 
 
-    string getRAM(){
+    string getRAM() const{
         return RAM;
     }
 
-    string getROM(){ 
+    string getROM() const{ 
         return ROM;
     }
 
-    string getStorage(){
+    string getStorage() const{
         return Storage;
     }
 
-    void setBrand(string b){
+    void setBrand(const string& b){
         Brand = b;
     }
 
-    void setModel(string m){
+    void setModel(const string& m){
         Model = m; 
     }
 
-    void setDisplay(string display){
+    void setDisplay(const string& display){
         DisplayResolution = display;
     }  
 
-    void setRAM(string ram){
+    void setRAM(const string& ram){
         RAM = ram;
     }
 
-    void setROM(string rom){ 
+    void setROM(const string& rom){ 
         ROM = rom; 
     }
-    void setStorage(string storage){ 
+    void setStorage(const string& storage){ 
         Storage = storage;
     }
 
 
-    void call(string number) {
+    void call(const string& number) const {
         cout << "Calling " << number << " from " << Brand << " " << Model  << endl;
     }
 
-    void message(string number, string message) {
+    void message(const string& number, const string& message) const {
         cout << message <<" is sent to "<< number << endl;
     }
 
-    void wifi(string network) {
+    void wifi(const string& network) const  {
         cout << "Connecting to Wi-Fi: " << network << endl;
     }
 
-    void internet(string website) {
+    void internet(const string& website) const {
         cout << "Welcome to " << website << endl;
     }
 
