@@ -24,11 +24,11 @@ public:
     FullTimeEmployee(string Id, string name, int monthlySalary) 
         : Employee(Id, name), monthlySalary(monthlySalary) {}
     
-    double calculatePay() const override {
+    double calculatePay() const  {
         return monthlySalary;
     }
 
-    void displayDetails() const override {
+    void displayDetails() const {
         cout << "Employee ID: " << employeeID << ", Name: " << employeeName << endl;
         cout << "Type: Full-time, Monthly Salary: " << monthlySalary << endl;
     }
